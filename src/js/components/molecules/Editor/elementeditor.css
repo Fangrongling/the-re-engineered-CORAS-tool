@@ -1,0 +1,285 @@
+label{
+    font-weight: bolder
+}
+
+.element-editor {
+    position: absolute;
+    z-index: 1000;
+    background-color: #FFF;
+    border: solid 1px darkblue;
+    border-radius: 5px;
+    width: 20rem;
+    height: auto;
+}
+
+.element-editor-section {
+    margin: .5rem 1rem;
+}
+
+.element-editor-section:first-of-type {
+    margin-top: 1rem;
+}
+
+.element-editor-section:last-of-type {
+    margin-bottom: 1rem;
+}
+
+.element-editor-section__label {
+    font-size: .75rem;
+    margin: .3rem .5rem 0 .5rem;
+}
+
+.element-editor-section__label--full {
+    display: block;
+    margin: initial;
+}
+
+.element-editor-section__partitioner {
+    width: 50%;
+    display: inline-block;
+}
+
+.element-editor-section__input {
+    border: none;
+    border-bottom: solid .5px #000;
+    height: 2rem;
+    font-family: "raleway";
+}
+
+.element-editor-section__input--100 {
+    display: block;
+    width: 100%;
+}
+
+.element-editor-section__input--75 {
+    width: 75%;
+}
+
+.element-editor-section__button {
+    background-color: lightslategray;
+    border: solid 1px #000;
+    border-radius: 2px;
+    color: #FFF;
+    margin: 1rem 0.3rem 0 0.4rem;
+    padding: .4rem;
+}
+
+.element-editor-section__button--cta {
+    background-color: green;
+}
+
+.element-editor-section__button--re {
+    background-color: rgb(172, 172, 69);
+}
+
+.element-editor-section__button--danger {
+    background-color: darkred;
+}
+
+.testswitch {
+    position: relative;
+    float: right; 
+    width: 66px;
+    margin: 0;
+    -webkit-user-select:none; 
+    -moz-user-select:none; 
+    -ms-user-select: none;
+}
+ 
+.testswitch-checkbox {
+    display: none;
+}
+ 
+.testswitch-label {
+    display: block; 
+    overflow: hidden; 
+    cursor: pointer;
+    border: 1px solid #2c2c2c; 
+    border-radius: 20px;
+    position: relative;
+}
+ 
+.testswitch-inner {
+    display: block; 
+    width: 200%; 
+    margin-left: -100%;
+    transition: margin 0.3s ease-in 0s;
+}
+ 
+.testswitch-inner::before, .testswitch-inner::after {
+    display: block; 
+    float: right; 
+    width: 50%; 
+    height: 25px; 
+    padding: 0; 
+    line-height: 30px;
+    font-size: 12px; 
+    color: white; 
+    font-family: 
+    Trebuchet, Arial, sans-serif; 
+    font-weight: bold;
+    box-sizing: border-box;
+}
+ 
+.testswitch-inner::after {
+    content: attr(data-on);
+    padding-left: 5px;
+    background-color: green; 
+    color: #FFFFFF;
+}
+ 
+.testswitch-inner::before {
+    content: attr(data-off);
+    padding-right: 3px;
+    background-color: #EEEEEE; 
+    color: ##2c2c2c;
+    text-align: right;
+}
+ 
+.testswitch-switch {
+    position: absolute; 
+    display: block; 
+    width: 23px;
+    height: 23px;
+    background: #FFFFFF;
+    top: 0; 
+    bottom: 0;
+    right: 39px;
+    border: 1px solid #2c2c2c; 
+    border-radius: 20px;
+    transition: all 0.3s ease-in 0s;
+}
+
+.testswitch-checkbox:checked + .testswitch-label .testswitch-inner {
+    margin-left: 0;
+}
+ 
+.testswitch-checkbox:checked + .testswitch-label .testswitch-switch {
+    right: 0px; 
+}
+ 
+.testswitch-checkbox2 {
+    display: none;
+}
+
+.testswitch-label2 {
+    display: block; 
+    overflow: hidden; 
+    cursor: pointer;
+    border: 1px solid #2c2c2c; 
+    border-radius: 20px;
+    position: relative;
+}
+ 
+.testswitch-inner2 {
+    display: block; 
+    width: 200%; 
+    margin-left: -100%;
+    transition: margin 0.3s ease-in 0s;
+}
+ 
+.testswitch-inner2::before, .testswitch-inner2::after {
+    display: block; 
+    float: right; 
+    width: 50%; 
+    height: 25px; 
+    padding: 0; 
+    line-height: 30px;
+    font-size: 12px; 
+    color: white; 
+    font-family: 
+    Trebuchet, Arial, sans-serif; 
+    font-weight: bold;
+    box-sizing: border-box;
+}
+ 
+
+.testswitch-inner2::after {
+    content: attr(data-off);
+    padding-left: 5px;
+    background-color: green; 
+    color: #FFFFFF;
+}
+ 
+.testswitch-inner2::before {
+    content: attr(data-on);
+    padding-right: 3px;
+    background-color: #EEEEEE; 
+    color: #2c2c2c;
+    text-align: right;
+}
+
+ 
+.testswitch-switch2 {
+    position: absolute; 
+    display: block; 
+    width: 23px;
+    height: 23px;
+    background: #FFFFFF;
+    top: 0; 
+    bottom: 0;
+    right:0px;
+    border: 1px solid #2c2c2c; 
+    border-radius: 20px;
+    transition: all 0.3s ease-in 0s;
+}
+
+.testswitch-checkbox2 + .testswitch-label2 .testswitch-inner2 {
+    margin-right: 0;
+}
+ 
+.testswitch-checkbox2 + .testswitch-label2 .testswitch-switch2 {
+    right: 39px; 
+}
+
+.independentCheckBox{
+    float: right;
+}
+
+
+
+/*.switch{
+    display:none;
+ }
+ 
+.testswitch-label{
+    position:relative;
+    display: block;
+    border-radius: 24px;
+    width:100px;
+    height: 40px;
+    border:2px solid green;
+    cursor: pointer;
+ }
+ .testswitch-label:before{
+    content: '开启';
+    line-height:36px;
+    text-indent: 50px;
+    color:green;
+    display: block;
+    border-radius: 20px;
+    height: 36px;
+    -webkit-transition: all 0.3s ease;
+ }
+.testswitch-label:after{
+    content: '';
+    position: absolute;
+    top:0;
+    left:1px;
+    width: 37px;
+    height: 37px;
+    border-radius: 50%;
+    background-color: #fff;
+    box-shadow: 1px 1px 1px 1px rgba(0,0,0,0.08);
+    -webkit-transition: all 0.3s ease;
+ }
+ .switch:checked~label:after{
+    margin-left: 60px;
+ }
+ 
+ .switch:checked~label:before{
+    background-color:green;
+    content: '关闭';
+    text-indent: 10px;
+    color:#fff;
+ }*/

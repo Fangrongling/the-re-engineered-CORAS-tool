@@ -1,0 +1,136 @@
+.editor-tools {
+    margin: 0 1rem 0 0;
+    float: right;
+    width: 230px;
+    position: fixed;
+    right: 0;
+    top: 54px;
+}
+
+.toolbarShow{
+    -ms-transform:rotate(90deg); /* IE 9 */
+    -moz-transform:rotate(90deg); /* Firefox */
+    -webkit-transform:rotate(90deg); /* Safari and Chrome */
+    -o-transform:rotate(90deg);
+}
+
+.toolbarHide{
+    -ms-transform:rotate(90deg); /* IE 9 */
+    -moz-transform:rotate(90deg); /* Firefox */
+    -webkit-transform:rotate(90deg); /* Safari and Chrome */
+    -o-transform:rotate(90deg);
+}
+
+@media only screen and (max-width: 1053px) {
+    .editor-tools {
+        margin: 1rem;
+        float: left;
+        width: 97.5%;
+        top: inherit;
+        bottom: -16px;
+        left: 0;
+    }
+    .toolbarHide{
+        position:'fixed';
+        right:-48px !important;
+    }
+    .toolbarShow{
+        position:'fixed';
+    }
+}
+
+.editor-tabrow {
+    display: flex;
+    justify-content: flex-start;
+    align-content: flex-start;
+}
+
+.editor-tabrow__tab {
+    margin-right: .5rem;
+    background-color: darkblue;
+    color: white;
+    padding: .5rem;
+    display: inline-block;
+    font-size: 11px;
+}
+
+.editor-tabrow__tab--selected {
+    background-color: white;
+    color: #000;
+    border-top: solid 1px #000;
+    border-left: solid 1px #000;
+    border-right: solid 1px #000;
+    position: relative;
+    top: 1px;
+    font-size: 11px;
+}
+
+.editor-tabrow__tablink {
+    cursor: pointer;
+}
+
+.editor-toolbox {
+    background-color: #FFF;
+    border: solid 1px #000;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.editor-toolbox__element {
+    flex: 1 1;
+    padding: 1rem;
+    align-content: center;
+    text-align: center;
+}
+
+.editor-menu {
+    margin: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.editor-menu__button {
+    margin-right: 1rem;
+    background-color: darkcyan;
+    border: solid 1px #FFF;
+    padding: .5rem;
+    color: white;
+}
+
+.editor-menu__button:hover{
+    background-color: white;
+    border: solid 1px #000000;
+    color: darkcyan;
+}
+
+.editor-menu__hidden {
+    display: none;
+}
+
+.zoom{
+    position: absolute;
+    z-index: 999;
+    margin: 55px 0 0 10px; 
+}
+
+.zoom_button{
+    margin: 5px;
+    font-size: 15px;
+}
+
+.zoom_button:hover{
+    background: darkcyan;
+    color: white;
+}
+
+.tooltiptext {
+    width: 250px;
+    background-color: rgb(255, 255, 199);
+    color: rgb(0, 0, 0);
+    text-align: left;
+    border-radius: 6px;
+    padding: 10px;
+
+    position: absolute;
+    right: 260px;
+}
